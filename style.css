@@ -1,0 +1,380 @@
+* {
+    
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: url(img/body.jpg);
+}
+
+#logo__igreja {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 85vh;
+}
+
+/*Icones redes sociais*/
+
+img#logo__youtube {
+    display: inline;
+    position: absolute;
+    width: 2%;
+    right: 10%;
+    border-radius: 50px;
+    top: 30px;   
+}
+
+img#logo__instagram {
+    display: inline;
+    position: absolute;
+    width: 2%;
+    right: 6%;
+    border-radius: 50px;
+    top: 30px;   
+}
+
+img#logo__facebook {
+    display: inline;
+    position: absolute;
+    width: 2%;
+    right: 2%;
+    border-radius: 50px;
+    top: 30px;
+}
+
+/*Banner rotativo*/
+
+.content {
+    height: 80%;
+    width: 97%;
+    border-radius: 10px;
+    overflow: hidden;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 14px 14px 5px 0 rgba(0,0,0,0.75)
+}
+
+.content .slide img {
+    height: 100%;
+    width: 100%;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    display: flex;  
+}
+
+
+.bar {
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgb(66, 93, 137);
+    margin: 6px;
+    border-radius: 10px;
+    cursor: pointer;
+    transform: .5s ease; 
+}
+
+.bar:hover {
+    background-color: #fff;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .6s;
+}
+
+#slide1:checked ~ .s1 {
+    margin-left: 0;
+}
+
+#slide2:checked ~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked ~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked ~.s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked ~.s1 {
+    margin-left: -80%;
+}
+
+/*Texto progrmação*/
+
+
+
+/*imagens da programação.
+Flexbox*/
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 55%;
+   
+}
+
+.container:nth-child(5n+1) {
+    margin: 0;
+}
+
+#logo__EBD {
+    width: 50vh;
+    transition: 500ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+    margin: 35px;
+    max-width: 100%;
+   -moz-transform: all 0.3s;
+   -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+}
+
+#logo__EBD:hover{
+   -moz-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#logo__familia {
+    width: 50vh;
+    transition: 500ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+    margin: 35px;
+    max-width: 100%;
+   -moz-transform: all 0.3s;
+   -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+
+}
+
+#logo__familia:hover {
+   -moz-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#logo__quinta {
+    width: 50vh;
+    transition: 500ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+    margin: 35px;
+    max-width: 100%;
+   -moz-transform: all 0.3s;
+   -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+}
+
+#logo__quinta:hover {
+   -moz-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#logo__casais {
+    width: 50vh;
+    transition: 500ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+    margin: 35px;
+    max-width: 100%;
+   -moz-transform: all 0.3s;
+   -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+}
+
+#logo__casais:hover {
+   -moz-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#logo__mulheres {
+    width: 50vh;
+    transition: 500ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+    margin: 35px;
+    max-width: 100%;
+   -moz-transform: all 0.3s;
+   -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+}
+
+#logo__mulheres:hover {
+   -moz-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#logo__homens {
+    width: 50vh;
+    transition: 500ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+    margin: 35px;
+    max-width: 100%;
+   -moz-transform: all 0.3s;
+   -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+}
+
+#logo__homens:hover {
+   -moz-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+#logo__jovens {
+    width: 50vh;
+    transition: 500ms;
+    box-shadow: 10px 10px 10px 0 #000000;
+    margin: 35px;
+    max-width: 100%;
+   -moz-transform: all 0.3s;
+   -webkit-transform: all 0.3s;
+    transform: all 0.3s;
+   
+}
+#logo__jovens:hover {
+   -moz-transform: scale(1.3);
+   -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+/* texto e foto pastoral*/
+
+.lideranca h2 {
+    padding-top: 0px 0 0px 0;
+    margin: 17px;
+    font-size: 24px;
+    font-family: Mont serrat , sans-serif; 
+
+}
+
+.lideranca img {
+    margin: 17px;
+    width: 50vh;
+    transition: 500ms;
+    max-width: 100%;
+   -moz-transform: all 0.2s;
+   -webkit-transform: all 0.2s;
+    transform: all 0.2s;
+    border-radius: 5px;
+    
+}
+
+.lideranca img:hover {
+   -moz-transform: scale(1.1);
+   -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*rede social Pr*/
+
+#redePr {
+    width: 2%;
+    margin-inline: 1.1%;
+   
+}
+
+/* eventos*/
+
+#evento__campanha {
+    font-size: 20px;
+    font-family: Mont serrat , sans-serif;
+    text-align: center;   
+}
+
+#foto__familia {
+    width: 70vh;
+    margin-left: 35%;
+    margin-top: 20px;   
+}
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+/*mapa*/
+
+.mapa h3 {
+    color: #000;
+    text-align: center;
+    font-family: Montserrat , sans-serif;
+    letter-spacing: 2px;
+    margin-top: 30px;
+    margin: 6px;
+    font-size: 25px;
+    padding: 15px;
+}
+
+/*rodape*/
+
+#rodape__footer {
+    font-size: 12px;
+}
+
+#sobre__nos  {
+    margin-right: 85%;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px;
+}
+
+#quem__somos {
+    margin-right: 85%;
+}
+
+#comu__nidade  {
+    margin-right: 85%;
+}
+
+#visao__visao {
+    margin-right: 85%;
+    padding: 10px;
+}
+
+#ser__igreja {
+    margin-right: 85%;
+}
+
+footer {
+    text-align: center;
+    background: url("");
+    padding: 40px 0;
+}
+
+footer img{
+    border-radius: 50%;
+    width: 5%;
+    margin-top: 50px;
+}
+
+.copyright {
+    color: #000;
+    font-size: 10px;
+    margin: 50px 0 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
