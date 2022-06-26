@@ -8,51 +8,51 @@ body {
     background: url(img/body.jpg);
 }
 
-#logo__igreja {
+.logo-igreja {
     position: absolute;
-    top: 1%;
-    left: 1%;
+    top: 2%;
+    left: 5%;
     width: 85vh;
 }
 
 /*Icones redes sociais*/
 
-img#logo__youtube {
+.redes1 {
     display: inline;
     position: absolute;
     width: 2%;
-    right: 10%;
-    border-radius: 50px;
-    top: 30px;   
+    right: 13%;
+    top: 50px;   
+    border-radius: 50px;  
 }
 
-img#logo__instagram {
+.redes2 {
     display: inline;
     position: absolute;
     width: 2%;
-    right: 6%;
+    right: 9%;
     border-radius: 50px;
-    top: 30px;   
+    top: 50px;   
 }
 
-img#logo__facebook {
+.redes3 {
     display: inline;
     position: absolute;
     width: 2%;
-    right: 2%;
+    right: 5%;
     border-radius: 50px;
-    top: 30px;
+    top: 50px; 
 }
 
 /*Banner rotativo*/
 
 .content {
-    height: 80%;
-    width: 97%;
+    height: 73%;
+    width: 91%;
     border-radius: 10px;
     overflow: hidden;
     position: absolute;
-    top: 55%;
+    top: 56%;
     left: 50%;
     transform: translate(-50%, -50%);
     box-shadow: 14px 14px 5px 0 rgba(0,0,0,0.75)
@@ -65,8 +65,8 @@ img#logo__facebook {
 
 .navigation {
     position: absolute;
-    bottom: 50px;
-    left: 50px;
+    bottom: 70px;
+    left: 90px;
     display: flex;  
 }
 
@@ -120,9 +120,14 @@ input {
     margin-left: -80%;
 }
 
-/*Texto progrmação*/
+/*Texto tema*/
 
-
+.tema  {
+    font-size: 22px;
+    text-align: center;
+    font-family: Mont serrat , sans-serif;
+    margin-top: 47%;
+}
 
 /*imagens da programação.
 Flexbox*/
@@ -131,7 +136,7 @@ Flexbox*/
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding-top: 55%;
+    padding-top: 2%;
    
 }
 
@@ -259,61 +264,26 @@ Flexbox*/
     transform: scale(1.3);
 }
 
-/* texto e foto pastoral*/
-
-.lideranca h2 {
-    padding-top: 0px 0 0px 0;
-    margin: 17px;
-    font-size: 24px;
-    font-family: Mont serrat , sans-serif; 
-
-}
-
-.lideranca img {
-    margin: 17px;
-    width: 50vh;
-    transition: 500ms;
-    max-width: 100%;
-   -moz-transform: all 0.2s;
-   -webkit-transform: all 0.2s;
-    transform: all 0.2s;
-    border-radius: 5px;
-    
-}
-
-.lideranca img:hover {
-   -moz-transform: scale(1.1);
-   -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
-/*rede social Pr*/
-
-#redePr {
-    width: 2%;
-    margin-inline: 1.1%;
-   
-}
-
 /* eventos*/
 
-#evento__campanha {
-    font-size: 20px;
+.campanha {
+    margin-top: 40px;
+    font-size: 30px;
     font-family: Mont serrat , sans-serif;
     text-align: center;   
 }
 
-#foto__familia {
+.foto-familia {
     width: 70vh;
     margin-left: 35%;
-    margin-top: 20px;   
+    margin-top: 40px;   
 }
 
 .videos {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 
 /*mapa*/
@@ -323,58 +293,117 @@ Flexbox*/
     text-align: center;
     font-family: Montserrat , sans-serif;
     letter-spacing: 2px;
-    margin-top: 30px;
-    margin: 6px;
+    margin: 35px;
     font-size: 25px;
     padding: 15px;
 }
 
+/*Sobre Nos*/
+
+.cabecalho {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 20px;
+    list-style: none;
+}
+
+.informacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-family: Mont serrat , sans-serif;
+    height: 7rem;
+}
+
+/* Oferta , Endereço texto*/
+
+.oferta {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-around;
+    flex-wrap: wrap;
+    font-size: 18px;
+    font-family: Mont serrat , sans-serif;
+    padding-top: 15px; 
+    margin-right: 70%;
+    padding-bottom: 5px;
+}
+
 /*rodape*/
 
-#rodape__footer {
-    font-size: 12px;
-}
-
-#sobre__nos  {
-    margin-right: 85%;
-    text-transform: uppercase;
-    font-size: 20px;
-    padding: 10px;
-}
-
-#quem__somos {
-    margin-right: 85%;
-}
-
-#comu__nidade  {
-    margin-right: 85%;
-}
-
-#visao__visao {
-    margin-right: 85%;
-    padding: 10px;
-}
-
-#ser__igreja {
-    margin-right: 85%;
-}
-
 footer {
-    text-align: center;
-    background: url("");
-    padding: 40px 0;
+    background-color: #D3D3D3;
+   
 }
 
-footer img{
-    border-radius: 50%;
-    width: 5%;
-    margin-top: 50px;
-}
-
-.copyright {
+.rodape {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #000;
-    font-size: 10px;
-    margin: 50px 0 0;
+    font-size: 16px;
+    margin: 30px 0 0;
     text-transform: uppercase;
     letter-spacing: 2px;
+    text-align: center;
 }
+
+#img__final {
+    width: 6vh;
+    margin-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+@media screen and (max-width: 480px) {
+    body {
+        width: auto;
+    }
+
+    .section, .logo-igreja {
+        width: auto;
+        top: 2%;
+    }
+
+    .section, .rede, .redes1, .redes2, .redes3 {
+        width: auto;
+        position: absolute;
+    }
+
+    .section, .slides1 {
+       width: auto;
+       top: 56%;
+    }
+
+    .section header, .tema {
+        width: auto;
+        margin-top: 117%;   
+    }
+
+    .container main, #logo__EBD, #logo__familia, #logo__quinta, 
+    #logo__casais, #logo__mulheres, #logo__homens, #logo__jovens {
+        width: auto;
+    }
+
+    .section .campanhas .pcampanha, .imgfoto-familia {
+        width: auto;
+    }
+
+    .section .cabecalho {
+        width: auto;
+    } 
+
+    .section ul.informacao, .lista {
+        width: auto;
+    }
+
+    .section .oferta {
+        width: auto;
+    }
+}
+
+
